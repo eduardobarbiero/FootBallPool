@@ -23,7 +23,6 @@
 						<th>Identificação</th>
 						<th>Nome</th>
 						<th>Bandeira</th>
-						<th>&nbsp;</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -31,16 +30,20 @@
 						<tr>
 						    <td>${team.IId}</td>						    
 							<td>${team.SName}</td>
-							<td><img src="${team.SCountryFlag}"></td>	
-							<td>
-							  <div onclick="location.href='?action=ActionSelecao&pais=${team.SName}';"
-								class="ui right floated small primary labeled icon button">
-								<i class="plus icon"></i> Buscar seleção
-							  </div>
-							</td>						
+							<td><img src="${team.SCountryFlag}"></td>							
 						</tr>
 					</c:forEach>
-				</tbody>				
+				</tbody>
+				<tfoot class="full-width">
+					<tr>
+						<th colspan="4">
+							<div onclick="location.href='/FootBallPool/ActionSelecao';"
+								class="ui right floated small primary labeled icon button">
+								<i class="plus icon"></i> Adicionar carro
+							</div>
+						</th>
+					</tr>
+				</tfoot>
 			</table>
 		</div>
 	
