@@ -33,10 +33,9 @@
 							<td>${team.SName}</td>
 							<td><img src="${team.SCountryFlag}"></td>	
 							<td>
-							  <div onclick="location.href='?action=ActionSelecao&pais=${team.SName}';"
-								class="ui right floated small primary labeled icon button">
-								<i class="plus icon"></i> Buscar seleção
-							  </div>
+							  <a href="team?action=ActionSelecao&pais=${team.SName}" class="ui right floated small primary labeled icon button">
+							  <i class="plus icon"></i> Buscar seleção
+							  </a>
 							</td>						
 						</tr>
 					</c:forEach>
